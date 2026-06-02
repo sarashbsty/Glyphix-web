@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GLYPHIX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = 'popup' class = "popup-screen hidden">
+        <div class = "popup-box">
+            <p>Error</p>
+            <button>OK</button>
+        </div>
+    </div>
+
+    <section>
+        <h1>GLYPHIX</h1>
+        <form id = "input-form">
+            <div class = "grid">
+                <div>
+                    <h3>Textbox</h3>
+                    <input id="text" type="text" min="1" placeholder="e.g. hi">
+                    <div id="err-textbox" class="err hidden">TextBox cannot be Empty</div>
+                </div>
+                <div>
+                    <h3>Size</h3>
+                    <input id="size" type="number" placeholder="e.g. 1,2,3">
+                    <div id="err-size" class="err hidden">Size cannot be Empty</div>
+                </div>
+            </div>
+            <button id="run" type="submit" style="margin-top:16px">RUN</button>
+        </form>
+    </section>
+    <section id = "output" class = "hidden">
+        <pre id = "out-text"></pre>
+    </section>
+    <script type="module" src = "./js/main.js" defer></script>
+</body>
+</html>
